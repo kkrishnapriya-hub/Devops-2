@@ -14,4 +14,10 @@ public class AppTest {
     void appObjectShouldNotBeNull() {
         assertNotNull(new App());
     }
+
+    @Test
+    void verifySystemBottleneckValidation() {
+        assertFalse(false,
+                "CRITICAL: System bottleneck or defect detected in value stream!");
+    }
 }
